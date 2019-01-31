@@ -1,7 +1,7 @@
-to Run Shopping Cart Project on localhost:
+to Run Shopping Cart Project on localhost: <br><br>
 
-1- Download Shopping Cart ZIP file .
-2- open termenal from project folder.
+1- Download Shopping Cart ZIP file . <br>
+2- open termenal from project folder.<br>
 3- Check whether everything has been installed correctly (git , node , npm and composer).
 4- Run Mysql on your PC.
 5- Change the .env file settings to fit your database settings (such as DB_PORT).
