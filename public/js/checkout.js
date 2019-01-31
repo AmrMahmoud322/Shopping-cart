@@ -6,12 +6,14 @@ $form.submit(function(event){
     $('charge-error').addClass('hidden');
     $form.find('button').prop('disabled', true);
     
+    console.log($('#cart-expiry-year').val());
+
     Stripe.card.createToken({
-        number: $('#card-number').val(),
-        cvc: $('#card-cvc').val(),
-        exp_month: $('#card-expiry-month').val(),
-        exp_year: $('#card-expirt-year').val(),
-        name: $('#card-name').val()
+        number: $('#cart-number').val(),
+        cvc: $('#cart-cvc').val(),
+        exp_month: $('#cart-expiry-month').val(),
+        exp_year: $('#cart-expiry-year').val(),
+        name: $('#cart-name').val()
     }, stripeResponseHandler);
     return false;
 });
