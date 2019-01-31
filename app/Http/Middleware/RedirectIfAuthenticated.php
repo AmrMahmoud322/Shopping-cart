@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Session;
 use Illuminate\Support\Facades\Auth;
 
 class RedirectIfAuthenticated
@@ -20,6 +21,8 @@ class RedirectIfAuthenticated
         if (Auth::guard($guard)->check()) {
             return redirect()->route('product.index');
         }
+
+        Session::put('oldUrl', $request->url());
 
         return $next($request);
     }
