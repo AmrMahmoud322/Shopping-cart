@@ -6,13 +6,15 @@ to Run Shopping Cart Project on localhost: <br><br>
 4- Run Mysql on your PC.<br>
 5- Create a database called "shopping-cart".<br>
 6- Change the .env file settings to fit your database settings (such as DB_PORT).<br>
-7- Run commands:<br>
-	 1-	 $ composer install<br>
-	 2-	 $ npm install<br>
-	 3-	 $ npm install --no-bin-links<br>
-	 4-	 $ php artisan migrate<br>
-	 5-	 $ php artisan db:seed<br>
-	 6-	 $ php artisan serve<br>
+<ul>
+	7- Run commands:<br>
+	 <li>	 $ composer install</li>
+	 <li>	 $ npm install</li>
+	 <li>	 $ npm install --no-bin-links</li>
+	 <li>	 $ php artisan migrate</li>
+	 <li>	 $ php artisan db:seed</li>
+	 <li>	 $ php artisan serve</li>
+</ul>
 8- Now you can go to your browser and open project link (Project like such as http://localhost:8000).<br>
 
 
